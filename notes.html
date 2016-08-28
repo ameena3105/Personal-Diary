@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!--Let browser know website is optimized for mobile-->
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<!--Import Google Icon Font-->
+		    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		    <!--Import materialize.css-->
+			<link type="text/css" rel="stylesheet" href="css/materialize.min.css">	
+			<link type="text/css" rel="stylesheet" href="css/common.css">
+
+			
+			
+		    
+    </head>
+	<body class="grey lighten-4">
+		<!-- header -->
+		<nav class="col s12 m12 l12">
+			<div class="nav-wrapper  blue darken-1 header">
+				<a href="#" data-activates="slide-out" class="button-collapse brand-logo left"><i class="material-icons logo-img">menu</i>Personal Diary</a>
+				<ul class="right">
+					<li>
+						
+						<!-- Dropdown Trigger -->
+						<a class='dropdown-button waves-effect' data-beloworigin="true" href='#' data-activates='user-drop-down'>
+							<img src="img/chweetu.jpg" alt="" class="circle responsive-img user-img">
+							Swee
+							<i class="material-icons">keyboard_arrow_down</i>
+						</a>
+
+						<!-- Dropdown Structure -->
+						<ul id='user-drop-down' class='dropdown-content'>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">person_outline</i>My Profile</a></li>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">tune</i>Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">exit_to_app</i>Logout</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+		<!-- Side Nav -->
+		<ul id="slide-out" class="side-nav">
+			<li><div class="userView">
+			  <img class="background" src="img/mt_bg.jpg">
+			  <a href="#!user"><img class="circle" src="img/chweetu.jpg"></a>
+			  <a href="#!name"><span class="white-text name">Sweekriti Smith</span></a>
+			  <a href="#!email"><span class="white-text email">sweekritismith@gmail.com</span></a>
+			</div></li>
+			<li><a href="index.html"><i class="material-icons">date_range</i>Calender</a></li>
+			<li><a href="#!"><i class="material-icons">assignment</i>Notes</a></li>
+			<li><a href="#!"><i class="material-icons">assignment_turned_in</i>To do List</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="waves-effect" href="#!"><i class="material-icons">account_box</i>My Account</a></li>
+		</ul>
+		<!-- Container -->
+		<div class="container">
+			<div class="notes-header z-depth-2">
+				<img src="img/note-header.jpg" class=""/>
+				<a class="btn-floating btn-large waves-effect waves-light red modal-trigger" href="#addModal"><i class="material-icons">add</i></a>
+			</div>
+				<!-- Add Modal Structure -->
+				<div id="addModal" class="modal modal-fixed-footer">
+					<div class="modal-content">
+						<h4>Notes <span class="modal-close right">x<span></h4>
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<input id="first_name" type="text" class="validate">
+										<label for="first_name">Notes Title</label>
+									</div>
+									<div class="input-field col s12 m6">
+										<select class="icons">
+											<option value="" disabled selected>Choose your image</option>
+											<option value="" data-icon="img/things to remenber.jpg" class="left circle">(Default)</option>
+											<option value="" data-icon="img/groceries.jpg" class="left circle">Thoughts</option>
+											<option value="" data-icon="img/shopping list.jpg" class="left circle">Quotes</option>
+											<option value="" data-icon="img/things to remenber.jpg" class="left circle">Things to Remember</option>
+											<option value="" data-icon="img/groceries.jpg" class="left circle">Groceries</option>
+											<option value="" data-icon="img/shopping list.jpg" class="left circle">Shopping List</option>
+											<option value="" data-icon="img/things to remenber.jpg" class="left circle">Task List</option>
+										</select>
+										<label>Category (Optional)</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">mode_edit</i>
+										<textarea id="textareaContent" class="materialize-textarea"></textarea>
+										<label for="textareaContent">Notes Content</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+					  <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Save</a>
+					  <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Cancel</a>
+					</div>
+				</div>
+			<!-- Notes card -->
+			<div class="wrapper-todo z-depth-2">
+				<div class="row">
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+					<div class="col s10 offset-s1 m3 l2 card sticky-action notes hoverable">
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Card Title</span>
+							<p class="ellipsis activator">
+								Here is some more information about this product that is only revealed once	this product lorem ipsum 
+							<p>
+						</div>
+						<div class="card-action">
+							<div class="row">
+								<a href="#!" class=" col s4"><i class="material-icons">favorite_border</i></a>
+								<a href="#!" class=" col s4"><i class="material-icons">delete</i></a>
+								<a href="#addModal" class="modal-trigger col s4"><i class="material-icons">edit</i></a>
+								
+							</div>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+						  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript">
+			
+				
+				// Initialize collapse button
+				
+				// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+				//$('.collapsible').collapsible();
+				$( document ).ready(function() {
+					$(".button-collapse").sideNav();
+					$('.modal-trigger').leanModal();
+					$('select').material_select()
+					
+				});	
+		</script>
+    </body>
+ </html>

@@ -1,0 +1,349 @@
+
+nav .header a.button-collapse {
+	font-size:18px;
+	margin-left:35px;
+}
+nav .header a.button-collapse .logo-img{
+    height:32px;
+	width:32px;
+	font-size:20px
+}
+nav .header ul.right{
+	padding-right:35px;
+}
+nav .header ul li .dropdown-button .user-img{
+	width:35px;
+	vertical-align: middle;
+}
+nav .header ul li .dropdown-button .material-icons{
+	display: inline-block;
+    vertical-align: middle;
+	font-size:18px;
+}
+nav .header ul li .dropdown-button.active{
+    background-color: rgba(0,0,0,0.1);
+}
+nav .dropdown-content i{
+	font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+nav .dropdown-content li{
+	min-height: 40px;
+}
+nav .dropdown-content li>a{
+	font-size:14px;
+	line-height: 14px;
+}
+
+
+.container{
+	margin-top: -8px;
+}
+
+.wrapper-todo{
+	padding:25px;
+	background-color:#fff;
+	
+}
+.collapsible .collapsible-body{
+	 background-color:#f2f2f2;
+}
+
+.notes-header{
+	width:100%;
+	height:auto;
+	margin-bottom:-5px;
+}
+.notes-header img{
+	max-width: 100%;
+    height: auto;
+}
+.notes-header a.btn-floating{
+	position:absolute;
+	top:238px;
+	right:70px;
+}
+.notes{
+	min-width:200px;
+	display: inline-block;
+    padding:0 !important;
+	
+}
+.notes .card-content,.notes .card-action,.notes .card-reveal{
+	padding:15px;
+}
+.notes .card-content{
+	background-image:url('../img/mt_bg.jpg');
+	background-size:130%;
+	color:#fff;
+	height: 150px;
+}
+.notes .card-content .card-title, .notes .card-reveal .card-title{
+    font-size: 14px;
+    font-weight: 500;
+	line-height:14px;
+	color:#fff !important;
+}
+.notes .card-content .ellipsis{
+    display: block;
+    display: -webkit-box;
+    /* max-width: 357px; */
+    height: 90px;
+    margin-top: 10px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	cursor:pointer;
+}
+.notes .card-action .row{
+	margin-bottom:0;
+}
+.notes .card-action i.material-icons {
+    color: #777;
+	cursor:pointer;
+	text-align:center;
+}
+.notes .card-action a{
+	color: #1e88e5 !important;
+	text-align:center;
+	margin-right:0 !important;
+}
+.notes .card-reveal .card-title{
+	color:#777 !important;
+}
+.notes .card-reveal .card-title i{
+	font-size: 14px;
+    margin-top: -2px;
+}
+.notes .card-reveal p{
+	font-size: 12px;
+    line-height: 16px;
+}
+.modal .modal-content h4 span.modal-close{
+	font-size: 18px;
+    margin-top: -12px;
+}
+.modal .modal-content form .file-field .btn{
+	background-color: #1e88e5;
+	padding:0 8px;
+	height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+}
+.modal .modal-content form .input-field textarea{
+	height:100px;
+	min-height:100px;
+	max-height:100px;
+	overflow:auto;	
+}
+.modal .modal-footer .modal-action{
+	color: #1e88e5;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label,.input-field input[type=time]:focus:not([readonly]) + label,.input-field textarea:focus:not([readonly]) + label {
+	color: #1e88e5;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,input[type=time]:focus:not([readonly]),.input-field textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #1e88e5;
+	box-shadow: 0 1px 0 0 #1e88e5;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #1e88e5;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	color:#1e88e5;
+}
+/* Modal */
+#editEvent.modal.modal-fixed-footer{
+	height:61%;
+}
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color:#1e88e5;
+}
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #99b7d2;
+}
+/* calendar*/
+#calendar.fc .fc-widget-header {
+    border: none;
+    color: rgba(0,0,0,.54);
+}
+#calendar.fc .fc-widget-header .fc-day-header {
+    text-align: left;
+    border: none;
+    font-weight: 500;
+    padding: 8px;
+}
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-widget-header .fc-day-header{
+    border: 1px solid #DDD;
+    line-height: 50px;
+    font-size: 17px
+}
+
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-day, #calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view.fc-week {
+    /*height: 100px!important;*/
+}
+
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-row.fc-week.fc-widget-content, #calendar.fc .fc-view.fc-agendaDay-view.fc-agenda-view .fc-row.fc-week.fc-widget-content {
+	border:none !important;
+}
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-axis.fc-widget-header{
+	width:45px;
+}
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-divider.fc-widget-header{
+	background-color:#999;
+}
+#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-widget-content .fc-time-grid .fc-slats td, #calendar.fc .fc-view.fc-agendaDay-view.fc-agenda-view .fc-widget-content .fc-time-grid .fc-slats td{
+	height:50px;
+}
+#calendar .fc-widget-content{
+	z-index:1;
+}
+#calendar .fc-event{
+	z-index:5;
+}
+.fc-scroller {
+    height: auto !important;
+}
+.fc-toolbar{
+	background-image:url('../img/bkg_08_august.jpg');
+	height: 200px;
+    background-position-y: 52%;
+    background-size: 100%;
+}
+.fc-toolbar .fc-center{
+	position:relative;
+	background-color:rgba(0,0,0,.3);
+	width:100%;
+	top:74px;
+	padding:10px;
+}
+.fc-toolbar .fc-center h2{
+	font-size: 24px;
+    color: #fff;
+    width: 100%;
+}
+.fc-toolbar .fc-left{
+	position: relative;
+    left: 50%;
+}
+.fc-toolbar .fc-left .fc-button-group{
+	position: relative;
+    top: 163px;
+    width: 100%;
+    z-index: 1;
+}
+.fc-toolbar .fc-left .fc-button-group .fc-next-button, .fc-toolbar .fc-left .fc-button-group .fc-prev-button{
+	border: 0px solid transparent;
+    background: transparent;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    padding: 4px;
+	text-shadow: none;
+    box-shadow: none;
+}
+.fc-toolbar .fc-left .fc-button-group .fc-prev-button{
+	left:-140px;
+}
+.fc-toolbar .fc-left .fc-button-group .fc-next-button{
+	left:75px;
+}
+.fc-toolbar .fc-left .fc-today-button{
+	right: -265px !important;
+	top:-29px;
+}
+.fc-toolbar .fc-left .fc-today-button,.fc-toolbar .fc-right .fc-month-button,.fc-toolbar .fc-right .fc-agendaWeek-button,.fc-toolbar .fc-right .fc-agendaDay-button{
+    background: transparent;
+	visibility:hidden;
+    border: 0;
+	color:#fff;
+	font-size:24px;
+	text-shadow:none;
+	opacity:1;
+	float:right;
+	position: relative;
+    right: -115px;
+    padding: 0;
+	margin-right:-10px;
+}
+.fc-toolbar .fc-right .fc-agendaDay-button{
+	margin-right:10px;
+}
+.fc-toolbar .fc-left .fc-today-button:before,.fc-toolbar .fc-right .fc-month-button:before,.fc-toolbar .fc-right .fc-agendaWeek-button:before,.fc-toolbar .fc-right .fc-agendaDay-button:before{
+	font-family: 'Material Icons';
+	visibility:visible;
+}
+.fc-toolbar .fc-left .fc-today-button:before{
+	content:'today';
+}
+.fc-toolbar .fc-right .fc-month-button:before{
+	content:'view_module';
+}
+.fc-toolbar .fc-right .fc-agendaWeek-button:before{
+	content:'view_week';
+}
+.fc-toolbar .fc-right .fc-agendaDay-button:before{
+	content:'view_day';
+}
+
+.material-tooltip{
+	
+	padding:5px;
+	font-size:11px;
+	line-height:10px;
+	min-height:20px;
+	border-radius:2px;
+}
+
+@media only screen and (min-width: 993px){
+	nav .header a.button-collapse {
+		display: block;
+	}
+	.container{
+		width:96% ;
+	}
+	.row .col.l2.notes{
+		margin-left: 35px ;
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+	.row .col.m3.notes{
+		margin-left: 7px;
+	}	
+  }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	.row .col.m3.notes{
+		margin-left: 7px;
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  {
+	.row .col.l2.notes{
+		margin-left: 35px ;
+	}
+}
+@media only screen and (max-width: 600px){
+	nav .header a.button-collapse {
+		margin-left:0px;
+	}
+	nav .header ul.right{
+		padding-right:0px;
+	}
+	#calendar.fc .fc-view.fc-agendaWeek-view.fc-agenda-view .fc-widget-header .fc-day-header{
+		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
+		padding:0;
+	}
+	.fc-toolbar {
+		height: 110px;
+		background-position-y: 55%;
+		background-size: 100%;
+	}
+}

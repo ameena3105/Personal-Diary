@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!--Let browser know website is optimized for mobile-->
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<!--Import Google Icon Font-->
+		    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		    <!--Import materialize.css-->
+		    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		    <link type="text/css" rel="stylesheet" href="css/common.css"  >
+			
+			<!-- Calender -->
+			<meta charset='utf-8' />
+			<link href='css/fullcalendar.css' rel='stylesheet' />
+			
+		    
+    </head>
+	<body class="grey lighten-4">
+		<!-- header -->
+		<nav class="col s12 m12 l12">
+			<div class="nav-wrapper  blue darken-1 header">
+				<a href="#" data-activates="slide-out" class="button-collapse brand-logo left"><i class="material-icons logo-img">menu</i>Personal Diary</a>
+				<ul class="right">
+					<li>
+						
+						<!-- Dropdown Trigger -->
+						<a class='dropdown-button waves-effect' data-beloworigin="true" href='#' data-activates='user-drop-down'>
+							<img src="img/chweetu.jpg" alt="" class="circle responsive-img user-img">
+							Swee
+							<i class="material-icons">keyboard_arrow_down</i>
+						</a>
+
+						<!-- Dropdown Structure -->
+						<ul id='user-drop-down' class='dropdown-content'>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">person_outline</i>My Profile</a></li>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">tune</i>Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="#!" class="waves-effect"><i class="material-icons">exit_to_app</i>Logout</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+		<!-- Side Nav -->
+		<ul id="slide-out" class="side-nav">
+			<li><div class="userView">
+			  <img class="background" src="img/mt_bg.jpg">
+			  <a href="#!user"><img class="circle" src="img/chweetu.jpg"></a>
+			  <a href="#!name"><span class="white-text name">Sweekriti Smith</span></a>
+			  <a href="#!email"><span class="white-text email">sweekritismith@gmail.com</span></a>
+			</div></li>
+			<li><a href="#!"><i class="material-icons">date_range</i>Calender</a></li>
+			<li><a href="notes.html"><i class="material-icons">assignment</i>Notes</a></li>
+			<li><a href="#!"><i class="material-icons">assignment_turned_in</i>To do List</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="waves-effect" href="#!"><i class="material-icons">account_box</i>My Account</a></li>
+		</ul>
+		<!-- Container -->
+		<div class="container">
+			<div id='calendar' class="card col s12 m12 l12"></div>
+		</div>
+		  <!-- Modal Structure -->
+		  <div id="addEvent" class="modal modal-fixed-footer">
+			<div class="modal-content">
+				<h4>Add Event</h4>
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12 m6 l6">
+						  <input id="addTitle" name="event" type="text">
+						  <label for="last_name">Event Name</label>
+						</div>
+						<div class="input-field col s12 m6 l6">
+							<select>
+							  <option value="" disabled selected>Choose your Event</option>
+							  <option value="1">Meeting</option>
+							  <option value="2">Reminder</option>
+							  <option value="3">Birth Day</option>
+							</select>
+							<label>Event Category</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class=" col s12 m6 l6">
+						  <label>Start Time</label>
+						  <input id="startTime" type="time" >
+						</div>
+						<div class="col s12 m6 l6">
+						  <label>End Time</label>
+						  <input id="endTime" type="time">
+						</div>
+					</div>
+					<div class="row">
+						<div class=" col s12 m6 l6">
+						  
+						  <div class="switch">
+							<label for="last_name">All Day</label>
+								<label>
+								  <input type="checkbox">
+								  <span class="lever"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <a href="#!" id="saveEvent" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+			</div>
+		  </div>
+		  <!-- Modal Structure -->
+		  <div id="editEvent" class="modal modal-fixed-footer">
+			<div class="modal-content">
+				<h4>Edit Event</h4>
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s12 m6 l6">
+						  <input id="editTitle" name="event" type="text">
+						  <label for="last_name">Event Name</label>
+						</div>
+						<div class="input-field col s12 m6 l6">
+							<select>
+							  <option value="" disabled selected>Choose your Event</option>
+							  <option value="1">Meeting</option>
+							  <option value="2">Reminder</option>
+							  <option value="3">Birth Day</option>
+							</select>
+							<label>Event Category</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class=" col s12 m6 l6">
+						  <label>Start Time</label>
+						  <input id="startTime" type="time" >
+						</div>
+						<div class="col s12 m6 l6">
+						  <label>End Time</label>
+						  <input id="endTime" type="time">
+						</div>
+					</div>
+					<div class="row">
+						<div class=" col s12 m6 l6">
+						  
+						  <div class="switch">
+							<label for="last_name">All Day</label>
+								<label>
+								  <input type="checkbox">
+								  <span class="lever"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <a href="#!" id="updateEvent" class="modal-action modal-close waves-effect waves-green btn-flat">Save</a>
+			</div>
+		  </div>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src='lib/moment.min.js'></script>
+		<script src='js/fullcalendar.min.js'></script>
+		<script src='js/calendar.js'></script>
+		<script type="text/javascript">
+				$( document ).ready(function() {
+					$(".button-collapse").sideNav();
+					$('.fc-toolbar .fc-left .fc-button-group .fc-prev-button').addClass('waves-effect waves-light');
+					$('.fc-toolbar .fc-left .fc-button-group .fc-next-button').addClass('waves-effect waves-light');
+					$('.fc-month-button').addClass('tooltipped');
+					$('.fc-agendaDay-button').addClass('tooltipped');
+					$('.fc-agendaWeek-button').addClass('tooltipped');
+					$('.fc-today-button').addClass('tooltipped');
+					$('.fc-month-button.tooltipped').tooltip({tooltip:'Month',position:'bottom',delay:'5'});
+					$('.fc-agendaWeek-button.tooltipped').tooltip({tooltip:'Week',position:'bottom',delay:'5'});
+					$('.fc-agendaDay-button.tooltipped').tooltip({tooltip:'Day',position:'bottom',delay:'5'});
+					$('.fc-today-button.tooltipped').tooltip({tooltip:'Today',position:'bottom',delay:'5'});
+					//$('.fc-day .fc-widget-content .fc-wed .fc-past').addClass('modal-trigger');
+					$('select').material_select();
+					$('.datepicker').pickadate({
+						selectMonths: true, // Creates a dropdown to control month
+						selectYears: 15 // Creates a dropdown of 15 years to control year
+					});
+					
+				});	
+				
+		</script>
+		
+    </body>
+ </html>
