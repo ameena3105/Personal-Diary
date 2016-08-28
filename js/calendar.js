@@ -81,7 +81,9 @@ $( document ).ready(function() {
 				$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
 			}
 			$('#calendar').fullCalendar('unselect');
-		},
+			
+		
+		}
 		/* select: function(start, end, allDay) {
 			var open = $('#modal1').openModal();
 			
@@ -99,11 +101,9 @@ $( document ).ready(function() {
 		} */
 		
 		//Edit
-		edit: function(){
-			
-		}
+		
 	});
-		$('.fc-event').click(function(){
+		/*$('.fc-event').click(function(){
 			$('#editEvent').openModal();
 			var targetEvent = $(this).children('.fc-content');
 			var title = targetEvent.children('.fc-title').text();
@@ -111,10 +111,11 @@ $( document ).ready(function() {
 			$('#editEvent #editTitle').focus();
 			var startTime = targetEvent.children('.fc-time').attr("data-start");
 			$('#editEvent #startTime').val(startTime);
-					
+			targetEvent.parent('.fc-event').remove();		
 			$('#editEvent #updateEvent').click(function(){
 				var displaytitle = $('#editEvent #editTitle').val();
 				targetEvent.children('.fc-title').val(displaytitle);
+				
 				var eventData;
 				if (displaytitle) {
 					eventData = {
@@ -122,13 +123,12 @@ $( document ).ready(function() {
 						start: '2016-08-01',
 						end: '2016-08-01'
 					};
-					$('#calendar').fullCalendar('renderEvent', eventData, true);
-				}
-				$('#calendar').fullCalendar('unselect');
+					$('#calendar').fullCalendar('renderEvent', eventData, false);
+				}	
 			});
-		});
+		});*/
 		//Add
-		$('.fc-widget-content').click(function(){
+		/*$('.fc-widget-content').click(function(){
 			$('#addEvent').openModal();
 			$('#addEvent #saveEvent').click(function(){
 				var displaytitle = $('#addEvent #addTitle').val();
@@ -143,5 +143,6 @@ $( document ).ready(function() {
 				}
 				$('#calendar').fullCalendar('unselect');
 			});
-		});
+		});*/
+		
 });

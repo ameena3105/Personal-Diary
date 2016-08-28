@@ -80,6 +80,20 @@ nav .dropdown-content li>a{
 	color:#fff;
 	height: 150px;
 }
+.notes .card-content.thought{
+	background-image:url('../img/bkg_05_may.jpg');
+	background-size:100%;
+}
+.notes .card-content.groceries{
+	background-image:url('../img/groceries.jpg');
+}
+.notes .card-content.shopping{
+	background-image:url('../img/shopping list.jpg');
+}
+.notes .card-content.todo{
+	background-image:url('../img/bkg_07_july.jpg');
+	background-position-y:150px;
+}
 .notes .card-content .card-title, .notes .card-reveal .card-title{
     font-size: 14px;
     font-weight: 500;
